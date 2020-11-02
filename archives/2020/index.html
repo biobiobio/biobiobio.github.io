@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="default">
     <!-- title -->
 
 
@@ -24,7 +24,7 @@
 <meta property="og:title" content="BioBioBio">
 <meta property="og:url" content="https://biobiobio.github.io/archives/2020/index.html">
 <meta property="og:site_name" content="BioBioBio">
-<meta property="og:locale" content="zh_CN">
+<meta property="og:locale">
 <meta property="article:author" content="BioBioBio">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
@@ -447,6 +447,56 @@ Run server1$ hexo ...
         </div>
     </article>
     
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2020/10/01/zu-sai-dui-lie/" >
+            
+                <span>阻塞队列</span>
+        </a>
+        <div class="abstract-content">
+            1.阻塞队列
+队列是一个数据结构，阻塞队列就是线程从一端添加数据，从一端拿取数据。当阻塞队列时空时，从队列中获取元素的操作将会被阻塞；当阻塞队列是满时，往队列里添加元素的操作将会被阻塞。
+
+为什么需要阻塞队列？
+
+线程之间的通信一般使用的是Object的wait()和notify()，阻塞队列不需要自己去关心什么时候线程被唤醒，什么时候线程阻塞，因为BlockingQueue自己会处理。
+
+BlockingQueue接口
+
+
+
+阻塞队列
+描述
+
+
+
+ArrayBlickingQueue
+由数组结构组成的有界阻塞队列
+
+
+LinkedBlockingQueue
+由链表结构组成的有界阻塞队列...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/10/01</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
     <!-- paginator  -->
     
 </main>
@@ -584,9 +634,18 @@ Run server1$ hexo ...
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 3
+        Total : 4
         </div>
         <!-- search  -->
         
@@ -615,6 +674,11 @@ Run server1$ hexo ...
             <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2020/10/31/hello-world/" >Hello World</a>
         </li>
     
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/01</span><a class="archive-post-title" href= "/2020/10/01/zu-sai-dui-lie/" >阻塞队列</a>
+        </li>
+    
     </div>
   </div>
         <div class="sidebar-panel-tags">
@@ -623,6 +687,8 @@ Run server1$ hexo ...
         <span class="sidebar-tag-name" data-tags="Markdown语法"><span class="iconfont-archer">&#xe606;</span>Markdown语法</span>
     
         <span class="sidebar-tag-name" data-tags="Blog美化"><span class="iconfont-archer">&#xe606;</span>Blog美化</span>
+    
+        <span class="sidebar-tag-name" data-tags="java"><span class="iconfont-archer">&#xe606;</span>java</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
@@ -656,6 +722,8 @@ jsonContent:
 </div>
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="java基础"><span class="iconfont-archer">&#xe60a;</span>java基础</span>
     
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>

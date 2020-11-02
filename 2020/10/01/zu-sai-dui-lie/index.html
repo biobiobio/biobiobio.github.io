@@ -20,22 +20,24 @@
     <meta name="keywords" content="BioBioBio,BioBioBio-study,BioBioBio-blog">
     
     <meta name="description" content="">
-    <meta name="description" content="鼠标点击效果（桃心）转自https:&#x2F;&#x2F;www.bbsmax.com&#x2F;A&#x2F;MyJx710Ezn&#x2F; 在Hexo博客下找到自己使用的主题，在保存js的文件夹下新建clickEffect.js，clickEffect.js文件内容如下： 1!function(e,t,a)&amp;#123;function n()&amp;#123;c(&quot;.heart&amp;#123;width: 10px;height: 10p">
+    <meta name="description" content="1.阻塞队列 队列是一个数据结构，阻塞队列就是线程从一端添加数据，从一端拿取数据。当阻塞队列时空时，从队列中获取元素的操作将会被阻塞；当阻塞队列是满时，往队列里添加元素的操作将会被阻塞。  为什么需要阻塞队列？  线程之间的通信一般使用的是Object的wait()和notify()，阻塞队列不需要自己去关心什么时候线程被唤醒，什么时候线程阻塞，因为BlockingQueue自己会处理。  Blo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="鼠标点击效果（桃心）">
-<meta property="og:url" content="https://biobiobio.github.io/2020/11/01/shu-biao-dian-ji-xiao-guo-tao-xin/index.html">
+<meta property="og:title" content="阻塞队列">
+<meta property="og:url" content="https://biobiobio.github.io/2020/10/01/zu-sai-dui-lie/index.html">
 <meta property="og:site_name" content="BioBioBio">
-<meta property="og:description" content="鼠标点击效果（桃心）转自https:&#x2F;&#x2F;www.bbsmax.com&#x2F;A&#x2F;MyJx710Ezn&#x2F; 在Hexo博客下找到自己使用的主题，在保存js的文件夹下新建clickEffect.js，clickEffect.js文件内容如下： 1!function(e,t,a)&amp;#123;function n()&amp;#123;c(&quot;.heart&amp;#123;width: 10px;height: 10p">
+<meta property="og:description" content="1.阻塞队列 队列是一个数据结构，阻塞队列就是线程从一端添加数据，从一端拿取数据。当阻塞队列时空时，从队列中获取元素的操作将会被阻塞；当阻塞队列是满时，往队列里添加元素的操作将会被阻塞。  为什么需要阻塞队列？  线程之间的通信一般使用的是Object的wait()和notify()，阻塞队列不需要自己去关心什么时候线程被唤醒，什么时候线程阻塞，因为BlockingQueue自己会处理。  Blo">
 <meta property="og:locale">
-<meta property="article:published_time" content="2020-11-01T13:28:34.000Z">
-<meta property="article:modified_time" content="2020-11-02T07:42:18.333Z">
+<meta property="og:image" content="https://biobiobio.github.io/2020/10/01/zu-sai-dui-lie/blogimages/mybatis0518/queue201001.png">
+<meta property="article:published_time" content="2020-10-01T07:00:00.000Z">
+<meta property="article:modified_time" content="2020-11-02T12:21:46.021Z">
 <meta property="article:author" content="BioBioBio">
-<meta property="article:tag" content="Blog美化">
+<meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://biobiobio.github.io/2020/10/01/zu-sai-dui-lie/blogimages/mybatis0518/queue201001.png">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     
-    <title>鼠标点击效果（桃心） · BioBioBio&#39;s blog</title>
+    <title>阻塞队列 · BioBioBio&#39;s blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -232,7 +234,7 @@
                 <a href="/" >BioBioBio</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">鼠标点击效果（桃心）</a>
+                <a href="#" class="post-name">阻塞队列</a>
             </div>
     </div>
     
@@ -267,7 +269,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            鼠标点击效果（桃心）
+            阻塞队列
             <!-- 404 -->
             
         </h1>
@@ -286,18 +288,18 @@ height:50vh;
                 
                     <div class= post-intro-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Blog美化">Blog美化</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
     
 </div>
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">458</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">1k</span>阅读时长: <span class="post-count reading-time">4 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2020/11/01</span>
+                    <span class="post-intro-time">2020/10/01</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -421,14 +423,105 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h2 id="鼠标点击效果（桃心）"><a href="#鼠标点击效果（桃心）" class="headerlink" title="鼠标点击效果（桃心）"></a>鼠标点击效果（桃心）</h2><p>转自<a target="_blank" rel="noopener" href="https://www.bbsmax.com/A/MyJx710Ezn/">https://www.bbsmax.com/A/MyJx710Ezn/</a></p>
-<p>在Hexo博客下找到自己使用的主题，在保存js的文件夹下新建clickEffect.js，clickEffect.js文件内容如下：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!<span class="function"><span class="keyword">function</span>(<span class="params">e,t,a</span>)</span>&#123;<span class="function"><span class="keyword">function</span> <span class="title">n</span>(<span class="params"></span>)</span>&#123;c(<span class="string">&quot;.heart&#123;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);&#125;.heart:after,.heart:before&#123;content: &#x27;&#x27;;width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 500%;-moz-border-radius: 50%;position: fixed;&#125;.heart:after&#123;top: -5px;&#125;.heart:before&#123;left: -5px;&#125;&quot;</span>),o(),r()&#125;<span class="function"><span class="keyword">function</span> <span class="title">r</span>(<span class="params"></span>)</span>&#123;<span class="keyword">for</span>(<span class="keyword">var</span> e=<span class="number">0</span>;e&lt;d.length;e++)d[e].alpha&lt;=<span class="number">0</span>?(t.body.removeChild(d[e].el),d.splice(e,<span class="number">1</span>)):(d[e].y--,d[e].scale+=<span class="number">.004</span>,d[e].alpha-=<span class="number">.013</span>,d[e].el.style.cssText=<span class="string">&quot;left:&quot;</span>+d[e].x+<span class="string">&quot;px;top:&quot;</span>+d[e].y+<span class="string">&quot;px;opacity:&quot;</span>+d[e].alpha+<span class="string">&quot;;transform:scale(&quot;</span>+d[e].scale+<span class="string">&quot;,&quot;</span>+d[e].scale+<span class="string">&quot;) rotate(45deg);background:&quot;</span>+d[e].color+<span class="string">&quot;;z-index:99999&quot;</span>);requestAnimationFrame(r)&#125;<span class="function"><span class="keyword">function</span> <span class="title">o</span>(<span class="params"></span>)</span>&#123;<span class="keyword">var</span> t=<span class="string">&quot;function&quot;</span>==<span class="keyword">typeof</span> e.onclick&amp;&amp;e.onclick;e.onclick=<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;t&amp;&amp;t(),i(e)&#125;&#125;<span class="function"><span class="keyword">function</span> <span class="title">i</span>(<span class="params">e</span>)</span>&#123;<span class="keyword">var</span> a=t.createElement(<span class="string">&quot;div&quot;</span>);a.className=<span class="string">&quot;heart&quot;</span>,d.push(&#123;<span class="attr">el</span>:a,<span class="attr">x</span>:e.clientX-<span class="number">5</span>,<span class="attr">y</span>:e.clientY-<span class="number">5</span>,<span class="attr">scale</span>:<span class="number">1</span>,<span class="attr">alpha</span>:<span class="number">1</span>,<span class="attr">color</span>:s()&#125;),t.body.appendChild(a)&#125;<span class="function"><span class="keyword">function</span> <span class="title">c</span>(<span class="params">e</span>)</span>&#123;<span class="keyword">var</span> a=t.createElement(<span class="string">&quot;style&quot;</span>);a.type=<span class="string">&quot;text/css&quot;</span>;<span class="keyword">try</span>&#123;a.appendChild(t.createTextNode(e))&#125;<span class="function"><span class="title">catch</span>(<span class="params">t</span>)</span>&#123;a.styleSheet.cssText=e&#125;t.getElementsByTagName(<span class="string">&quot;head&quot;</span>)[<span class="number">0</span>].appendChild(a)&#125;<span class="function"><span class="keyword">function</span> <span class="title">s</span>(<span class="params"></span>)</span>&#123;<span class="keyword">return</span><span class="string">&quot;rgb(&quot;</span>+~~(<span class="number">255</span>*<span class="built_in">Math</span>.random())+<span class="string">&quot;,&quot;</span>+~~(<span class="number">255</span>*<span class="built_in">Math</span>.random())+<span class="string">&quot;,&quot;</span>+~~(<span class="number">255</span>*<span class="built_in">Math</span>.random())+<span class="string">&quot;)&quot;</span>&#125;<span class="keyword">var</span> d=[];e.requestAnimationFrame=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="keyword">return</span> e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;<span class="built_in">setTimeout</span>(e,<span class="number">1e3</span>/<span class="number">60</span>)&#125;&#125;(),n()&#125;(<span class="built_in">window</span>,<span class="built_in">document</span>);</span><br></pre></td></tr></table></figure>
+        <h4 id="1-阻塞队列"><a href="#1-阻塞队列" class="headerlink" title="1.阻塞队列"></a>1.阻塞队列</h4><blockquote>
+<p>队列是一个数据结构，阻塞队列就是线程从一端添加数据，从一端拿取数据。<strong>当阻塞队列时空时</strong>，从队列中<strong>获取元素的操作将会被阻塞</strong>；当<strong>阻塞队列是满</strong>时，往队列里<strong>添加元素的操作将会被阻塞</strong>。</p>
+</blockquote>
+<p>为什么需要阻塞队列？</p>
+<blockquote>
+<p>线程之间的通信一般使用的是Object的wait()和notify()，阻塞队列不需要自己去关心什么时候线程被唤醒，什么时候线程阻塞，因为BlockingQueue自己会处理。</p>
+</blockquote>
+<h5 id="BlockingQueue接口"><a href="#BlockingQueue接口" class="headerlink" title="BlockingQueue接口"></a>BlockingQueue接口</h5><p><img src="blogimages/mybatis0518/queue201001.png" alt="image-20201013153343662"></p>
+<table>
+<thead>
+<tr>
+<th>阻塞队列</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ArrayBlickingQueue</td>
+<td>由<strong>数组结构</strong>组成的<strong>有界阻塞</strong>队列</td>
+</tr>
+<tr>
+<td>LinkedBlockingQueue</td>
+<td>由<strong>链表结构</strong>组成的<strong>有界阻塞</strong>队列(默认大小Integer.MAX_VALUE,21亿)</td>
+</tr>
+<tr>
+<td>PriorityBlockingQueue</td>
+<td>支持<strong>优先级</strong>排序的<strong>无界阻塞</strong>队列</td>
+</tr>
+<tr>
+<td>DelayQueue</td>
+<td>使用<strong>优先级队列</strong>实现的<strong>延迟无界</strong>阻塞队列</td>
+</tr>
+<tr>
+<td>SyncronousQueue</td>
+<td>不存储元素的阻塞队列，即<strong>单个元素的队列</strong></td>
+</tr>
+<tr>
+<td>LinkedTransferQueue</td>
+<td>由<strong>链表</strong>结构组成的<strong>无界阻塞</strong>队列</td>
+</tr>
+<tr>
+<td>LinkedBlockingDeque</td>
+<td>由<strong>链表结构</strong>组成的<strong>双向阻塞</strong>队列</td>
+</tr>
+</tbody></table>
+<h5 id="API使用"><a href="#API使用" class="headerlink" title="API使用"></a>API使用</h5><table>
+<thead>
+<tr>
+<th>方法类型</th>
+<th>抛异常</th>
+<th>特殊值</th>
+<th>阻塞</th>
+<th>超时</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>插入</td>
+<td>add(e)</td>
+<td>offer(e)</td>
+<td>put(e)</td>
+<td>offer(e,time,unit)</td>
+</tr>
+<tr>
+<td>移除</td>
+<td>remove()</td>
+<td>poll()</td>
+<td>take()</td>
+<td>poll(time,unit)</td>
+</tr>
+<tr>
+<td>检查</td>
+<td>element()</td>
+<td>peek()</td>
+<td>不可用</td>
+<td>不可用</td>
+</tr>
+</tbody></table>
+<h5 id="1-抛异常add和remove"><a href="#1-抛异常add和remove" class="headerlink" title="1.抛异常add和remove"></a>1.抛异常add和remove</h5><blockquote>
+<p>1.异常：当阻塞队列满时，往队列中add元素会有IllegalStateException:Queue full；当阻塞队列为空时，再往队列remove元素就会有NoSuchElementException</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"> <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        BlockingQueue&lt;String&gt; blockingQueue = <span class="keyword">new</span> ArrayBlockingQueue(<span class="number">3</span>);</span><br><span class="line">        System.out.println(blockingQueue.add(<span class="string">&quot;a&quot;</span>));</span><br><span class="line">        System.out.println(blockingQueue.add(<span class="string">&quot;b&quot;</span>));</span><br><span class="line">        System.out.println(blockingQueue.add(<span class="string">&quot;b&quot;</span>));</span><br><span class="line"><span class="comment">//        blockingQueue.add(&quot;d&quot;); //队列的大小为3，多余的会抛出异常</span></span><br><span class="line"></span><br><span class="line">        System.out.println(blockingQueue.element());<span class="comment">//检查队列是否为空，返回队列首部</span></span><br><span class="line"></span><br><span class="line">        System.out.println(blockingQueue.remove());</span><br><span class="line">        System.out.println(blockingQueue.remove());</span><br><span class="line">        System.out.println(blockingQueue.remove());</span><br><span class="line"><span class="comment">//        blockingQueue.remove();//当队列为空时，再向队列中获取元素时会抛出异常</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
-<p>在<code>主题文件夹</code>下的layout文件夹下的_layout.ejs（我自己的是_partial\base-head.ejs文件）配置文件里面的<code>&lt;head&gt;&lt;/head&gt;</code>标签里添加</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">&quot;&lt;%- url_for(&#x27;assets/js/clickEffect.js&#x27;) %&gt;&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="2-特殊值offer和poll"><a href="#2-特殊值offer和poll" class="headerlink" title="2.特殊值offer和poll"></a>2.特殊值offer和poll</h5><blockquote>
+<p>2.特殊值：插入方法，成功true失败返回false；移除方法成功返回队列的元素，失败返回null</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        BlockingQueue&lt;String&gt; blockingQueue = <span class="keyword">new</span> ArrayBlockingQueue(<span class="number">3</span>);</span><br><span class="line">        System.out.println(blockingQueue.offer(<span class="string">&quot;a&quot;</span>));</span><br><span class="line">        System.out.println(blockingQueue.offer(<span class="string">&quot;b&quot;</span>));</span><br><span class="line">        System.out.println(blockingQueue.offer(<span class="string">&quot;b&quot;</span>));</span><br><span class="line">  System.out.println(blockingQueue.offer(<span class="string">&quot;d&quot;</span>));<span class="comment">//当队列已经满后，添加失败，返回一个false</span></span><br><span class="line">        System.out.println(blockingQueue.element());<span class="comment">//检查队列是否为空，返回队列首部</span></span><br><span class="line">        System.out.println(blockingQueue.poll());</span><br><span class="line">        System.out.println(blockingQueue.poll());</span><br><span class="line">        System.out.println(blockingQueue.poll());</span><br><span class="line">        System.out.println(blockingQueue.poll());<span class="comment">//当队列为空时，再向队列中获取元素时会返回一个null</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
-<p>src路径根据clickEffect.js的存放路径添加</p>
+<h5 id="3-使用put和take，会阻塞"><a href="#3-使用put和take，会阻塞" class="headerlink" title="3.使用put和take，会阻塞"></a>3.使用put和take，会阻塞</h5><blockquote>
+<p>3.一致阻塞：当阻塞队列满时，生产者继续put元素时，队列会阻塞生产者线程知道put数据成功或者中断退出；当阻塞队列为空时，消费者线程take元素，队列会一致阻塞消费者线程直到队列可用</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">       BlockingQueue&lt;String&gt; blockingQueue = <span class="keyword">new</span> ArrayBlockingQueue(<span class="number">3</span>);</span><br><span class="line">       blockingQueue.put(<span class="string">&quot;a&quot;</span>);</span><br><span class="line">       blockingQueue.put(<span class="string">&quot;b&quot;</span>);</span><br><span class="line">       blockingQueue.put(<span class="string">&quot;b&quot;</span>);</span><br><span class="line">       <span class="comment">//blockingQueue.put(&quot;d&quot;);//超过3个会一致阻塞</span></span><br><span class="line"></span><br><span class="line">       System.out.println(blockingQueue.take());</span><br><span class="line">       System.out.println(blockingQueue.take());</span><br><span class="line">       System.out.println(blockingQueue.take());</span><br><span class="line">       <span class="comment">//System.out.println(blockingQueue.take());//为空时，阻塞等待</span></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="4-超时退出使用加参数的offer和poll"><a href="#4-超时退出使用加参数的offer和poll" class="headerlink" title="4.超时退出使用加参数的offer和poll"></a>4.超时退出使用加参数的offer和poll</h5><blockquote>
+<p>4.当阻塞队列满时，队列会阻塞生产社线程一定时间，超时后生产者线程会退出</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">        BlockingQueue&lt;String&gt; blockingQueue = <span class="keyword">new</span> ArrayBlockingQueue(<span class="number">3</span>);</span><br><span class="line">        blockingQueue.offer(<span class="string">&quot;a&quot;</span>,<span class="number">2L</span>, TimeUnit.SECONDS);</span><br><span class="line">        blockingQueue.offer(<span class="string">&quot;b&quot;</span>,<span class="number">2L</span>, TimeUnit.SECONDS);</span><br><span class="line">        blockingQueue.offer(<span class="string">&quot;c&quot;</span>,<span class="number">2L</span>, TimeUnit.SECONDS);</span><br><span class="line">        blockingQueue.offer(<span class="string">&quot;d&quot;</span>,<span class="number">2L</span>, TimeUnit.SECONDS);<span class="comment">//等待两秒，还没有空余位置，直接放弃</span></span><br><span class="line"></span><br><span class="line">        System.out.println(blockingQueue.poll(<span class="number">2L</span>, TimeUnit.SECONDS));</span><br><span class="line">        System.out.println(blockingQueue.poll(<span class="number">2L</span>, TimeUnit.SECONDS));</span><br><span class="line">        System.out.println(blockingQueue.poll(<span class="number">2L</span>, TimeUnit.SECONDS));</span><br><span class="line">        System.out.println(blockingQueue.poll(<span class="number">2L</span>, TimeUnit.SECONDS));<span class="comment">//超过2S停止，过时不候</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="同步阻塞队列SynchronousQueue"><a href="#同步阻塞队列SynchronousQueue" class="headerlink" title="同步阻塞队列SynchronousQueue"></a>同步阻塞队列SynchronousQueue</h5><blockquote>
+<p>SynchronousQueue没有容量，与其他的BlockingQueue不同，SynchronousQueue是一个不存储元素的BlockingQueue，每一个out操作必须等待一个take操作，都则不能继续添加元素。</p>
+</blockquote>
 
     </article>
     <!-- license  -->
@@ -437,13 +530,13 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2020/10/31/hello-world/" title= "Hello World">
+                    <div class="nextTitle">Hello World</div>
+                </a>
+            
         </li>
         <li class="previous">
-            
-                <div class="prevSlogan">Previous Post</div>
-                <a href= "/2020/11/01/markdown-yu-fa/" title= "Markdown语法">
-                    <div class="prevTitle">Markdown语法</div>
-                </a>
             
         </li>
     </ul>
@@ -576,7 +669,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#鼠标点击效果（桃心）"><span class="toc-number">1.</span> <span class="toc-text">鼠标点击效果（桃心）</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-阻塞队列"><span class="toc-number">1.</span> <span class="toc-text">1.阻塞队列</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#BlockingQueue接口"><span class="toc-number">1.1.</span> <span class="toc-text">BlockingQueue接口</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#API使用"><span class="toc-number">1.2.</span> <span class="toc-text">API使用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-抛异常add和remove"><span class="toc-number">1.3.</span> <span class="toc-text">1.抛异常add和remove</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-特殊值offer和poll"><span class="toc-number">1.4.</span> <span class="toc-text">2.特殊值offer和poll</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-使用put和take，会阻塞"><span class="toc-number">1.5.</span> <span class="toc-text">3.使用put和take，会阻塞</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-超时退出使用加参数的offer和poll"><span class="toc-number">1.6.</span> <span class="toc-text">4.超时退出使用加参数的offer和poll</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#同步阻塞队列SynchronousQueue"><span class="toc-number">1.7.</span> <span class="toc-text">同步阻塞队列SynchronousQueue</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
